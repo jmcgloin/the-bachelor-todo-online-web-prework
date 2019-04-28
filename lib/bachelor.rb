@@ -12,6 +12,7 @@ def get_contestant_name(data, occupation)
     |season|
     data[season].each do
       |contestant|
+      binding.pry
       if contestant.include?(occupation) then return contestant[0] end
     end
   end
