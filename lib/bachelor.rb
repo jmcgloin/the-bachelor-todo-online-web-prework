@@ -13,7 +13,7 @@ def get_contestant_name(data, occupation)
     data[season].each do
       |contestant|
       # binding.pry
-      if contestant.values.include?(occupation) then return contestant[0] end
+      if contestant.values.include?(occupation) then return contestant.values[0] end
     end
   end
   # binding.pry
