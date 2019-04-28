@@ -54,5 +54,6 @@ def get_average_age_for_season(data, season)
       age_sum += contestant["age"].to_i
     end
   end
+  binding.pry
   return (age_sum / count.to_f)
 end
