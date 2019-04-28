@@ -12,8 +12,10 @@ def get_contestant_name(data, occupation)
     |season|
     data[season].each do
       |contestant|
-      contestant.include?()
-  binding.pry
+      if contestant.include?(occupation) then return contestant[0] end
+    end
+  end
+  # binding.pry
 end
 
 def count_contestants_by_hometown(data, hometown)
