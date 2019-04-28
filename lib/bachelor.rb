@@ -38,7 +38,7 @@ def get_occupation(data, hometown)
     data[season].each do
       |contestant|
       # binding.pry
-      if contestant.values.include?(hometown) then return contestant[occupation] end
+      if contestant.values.include?(hometown) then return contestant["occupation"] end
     end
   end
 end
